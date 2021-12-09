@@ -1,3 +1,7 @@
+/**
+ * @jest-environment jsdom
+ */  
+
 import { enableFetchMocks } from 'jest-fetch-mock'
 enableFetchMocks()
 import { handleSubmit } from "../src/client/js/formHandler"

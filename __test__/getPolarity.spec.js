@@ -1,3 +1,8 @@
+/**
+ * @jest-environment jsdom
+ */  
+
+
 // Import the js file to test
 import { polarityGet } from '../src/client/js/scoreTag'
 import "@babel/polyfill";

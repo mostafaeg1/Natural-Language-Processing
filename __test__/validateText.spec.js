@@ -1,9 +1,14 @@
+/**
+ * @jest-environment jsdom
+ */
+
 import { validateText } from "../src/client/js/textvalidate"
 require("@babel/polyfill");
 
+
 describe("Testing the text validity", () => {
     test("Testing the validateText() to throw on empty string", () => {
-        document.body.innerHTML = `
+       document.body.innerHTML = `
             <form class="" onsubmit="return Client.handleSubmit(event)">
                 <textarea id="article" type="text" name="input" value="" onblur="" title="paste article text here" placeholder="Article Text"></textarea>
                 <input id="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
