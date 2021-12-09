@@ -17,10 +17,9 @@ describe("Testing the call to API", () => {
         const baseURL = 'https://api.meaningcloud.com/sentiment-2.1?key='
         const apiKey = process.env.API_KEY
         const textURI = '&of=json&txt=' + encodeURI('This test is super lame, but should be fair.')
-        const endTag = '&model=general&lang=en'
 
-        await getMeaning(baseURL, apiKey, textURI, endTag)
+        await getMeaning(baseURL, apiKey, textURI)
         expect(fetch).toHaveBeenCalledTimes(1);
-        expect(fetch).toHaveBeenCalledWith(baseURL + apiKey + textURI + endTag);
+         expect(fetch).toHaveBeenCalledWith(baseURL + apiKey + textURI);
     })
 });
