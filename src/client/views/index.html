@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>The News Textiment</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Arvo&family=Fredericka+the+Great&family=UnifrakturCook:wght@700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div class="title">
+                <h1>Evaluate News project</h1>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <div></div>
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <textarea id="article" type="text" name="input" value="" onblur="" title="paste article text here" placeholder="Article Text"></textarea>
+                    <input id="submit" type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
+                </form>
+            </section>
+
+            <section id="evaluation">
+                <strong>Evaluation</strong>
+                <ul>
+                    <li id="polarity"></li>
+                    <li id="agreement"></li>
+                    <li id="subjectivity"></li>
+                    <li id="confidence"></li>
+                    <li id="irony"></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Mostafa egbarea</p>
+        </footer>
+
+         <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script> 
+
+    </body>
+</html>
