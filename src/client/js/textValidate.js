@@ -8,3 +8,4 @@ export function validateText(text){
         article.classList.remove('invalid')
     }
 }
+

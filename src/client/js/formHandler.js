@@ -1,6 +1,6 @@
-import { validateText } from './textValidate'
-import { getKey } from './keyGetter'
-import { getMeaning } from './apiGetter'
+import { validateText } from './textvalidate'
+import { getKey } from './keygetter'
+import { getMeaning } from './apigetter'
 import { polarityGet } from './scoreTag'
 import { updateUI } from './uiHandler'
 

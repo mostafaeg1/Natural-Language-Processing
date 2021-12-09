@@ -21,8 +21,8 @@ app.get('/', function (req, res) {
 })
 
 // designates what port the app will listen to for incoming requests
-app.listen(8082, function () {
-    console.log(`Example app listening on localhost: ${8082}`)
+app.listen(8081, function () {
+    console.log(`Example app listening on localhost: ${8081}`)
 })
 
 app.get('/getkey', function (req, res) {

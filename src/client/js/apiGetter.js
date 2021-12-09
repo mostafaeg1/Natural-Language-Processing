@@ -1,7 +1,6 @@
 export const getMeaning = async (baseURL, key, text) => {
     const response = await fetch(baseURL + key + text);
     try {
-        console.log("ad");
         const allData = await response.json()
         return allData;
         console.log(allData);
