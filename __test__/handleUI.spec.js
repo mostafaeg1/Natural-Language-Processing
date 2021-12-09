@@ -1,4 +1,7 @@
 import { updateUI } from '../src/client/js/uiHandler'
+import "@babel/polyfill";
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 describe("Testing the UI updates correctly", () => {
     // Set up DOCUMENT

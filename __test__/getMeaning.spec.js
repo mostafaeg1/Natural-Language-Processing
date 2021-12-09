@@ -1,5 +1,5 @@
 import { getMeaning } from '../src/client/js/apigetter'
-
+import "@babel/polyfill";
 const dotenv = require('dotenv');
 dotenv.config();
 

@@ -1,4 +1,5 @@
 import { validateText } from "../src/client/js/textvalidate"
+require("@babel/polyfill");
 
 describe("Testing the text validity", () => {
     test("Testing the validateText() to throw on empty string", () => {

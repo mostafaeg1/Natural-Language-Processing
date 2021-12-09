@@ -1,4 +1,5 @@
 import { getKey } from '../src/client/js/keygetter'
+import "@babel/polyfill";
 
 const dotenv = require('dotenv');
 dotenv.config();

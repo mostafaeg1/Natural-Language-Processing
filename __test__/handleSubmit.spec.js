@@ -6,6 +6,7 @@ import { getKey } from "../src/client/js/keygetter"
 import { getMeaning } from "../src/client/js/apigetter"
 import { polarityGet } from "../src/client/js/scoreTag"
 import { updateUI } from "../src/client/js/uiHandler"
+import "@babel/polyfill";
 
 describe("Testing the submit functionality", () => {
 
